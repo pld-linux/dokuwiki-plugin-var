@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	DokuWiki var plugin
 Name:		dokuwiki-plugin-%{plugin}
-Version:	20090325
+Version:	20120624
 Release:	1
 License:	GPL v2
 Group:		Applications/WWW
-Source0:	https://github.com/dokufreaks/plugin-%{plugin}/tarball/master#/%{plugin}.tgz
-# Source0-md5:	94265dce98b920701d09e6a667ceffc7
+Source0:	https://github.com/dokufreaks/plugin-%{plugin}/tarball/master#/%{plugin}-%{version}.tgz
+# Source0-md5:	0e7b1e2428a53773f922eb020ca795b3
 URL:		http://www.dokuwiki.org/plugin:var
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.520
