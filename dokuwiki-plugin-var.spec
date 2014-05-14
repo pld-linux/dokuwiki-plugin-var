@@ -4,17 +4,17 @@
 Summary:	DokuWiki var plugin
 Name:		dokuwiki-plugin-%{plugin}
 Version:	20120624
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Applications/WWW
-Source0:	https://github.com/dokufreaks/plugin-%{plugin}/tarball/master#/%{plugin}-%{version}.tgz
+Source0:	https://github.com/dokufreaks/plugin-%{plugin}/tarball/master/%{plugin}-%{version}.tgz
 # Source0-md5:	0e7b1e2428a53773f922eb020ca795b3
 URL:		http://www.dokuwiki.org/plugin:var
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.520
 Requires:	dokuwiki >= 20061106
 Requires:	php(core) >= %{php_min_version}
-Requires:	php-date
+Requires:	php(date)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
